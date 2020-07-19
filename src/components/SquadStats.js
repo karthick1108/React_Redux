@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 class SquadStats extends Component {
-  strength() {
+  strength = () => {
     let strength = 0;
     this.props.heroes.forEach((hero) => (strength += hero.strength));
     return strength;
-  }
+  };
 
   intelligence() {
     let intelligence = 0;
